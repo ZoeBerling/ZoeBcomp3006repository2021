@@ -32,19 +32,11 @@ def main():
     remove_case = False  # if True will convert capital letters to lowercase before counting frequency
 
     for i in range(1, len(sys.argv)):
-        # if '-l' in sys.argv:  # -l only print out frequency of characters in the argument letters
-            # index = sys.argv.index('-l')
-            # letters = sys.argv[index + 1]
-            # if '-' in letters:
-                # letters = ''
-            # else:
-                # for letter in letters:
-                    # print(f'{letter}:{d[letter]}', end=',')
 
         if '-c' in sys.argv:  # - c (distinguish between upper and lowercase
             remove_case = True
 
-        if '-z' in sys.argv:  # -z print a row for each character: even if it never occurs (will include capital letters if -c isn't an argument
+        if '-z' in sys.argv:  # -z print a row for each character: even if it never occurs (will include capital letters if -c isn't an argument)
             alphabet = 'abcdefghijklmnopqrstuvwxyz'
             for character in alphabet:
                 d[character] = 0
@@ -59,12 +51,12 @@ def main():
                 index = sys.argv.index('-l')
                 letters = sys.argv[index + 1 ]
                 if '-' in letters:  # checks if the next item in the index is a new flag
-                    print("Characters for the argument -l not found. Letters must follow the argument -l.")
+                    print("Characters for the argument -l not found. Letters to count must follow the argument -l.")
                 else:
                     if key in letters:
                         print(key, ',', d[key])
             except IndexError:
-                print("Characters for the argument -l not found. Letters must follow the argument -l.")
+                print("Characters for the argument -l not found. Letters to count must follow the argument -l.")
                 break
         else:
             print(key, ',', d[key])
