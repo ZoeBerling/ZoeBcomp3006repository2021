@@ -5,7 +5,7 @@ Change the file by updating the file variable.
  -c : Converts all capital letters into lower case before counting instances
  -z prints a row for each lower case characer even when it occurs 0 times in the txt
  -l only prints the frequencies of the characters in the argument assigned after -l is called. This is case-sensitive.
- The arguments are additive."""
+ The arguments are additive. and -l takes priority over -z"""
 
 # Count frequencies of characters in a text file
 # create txt file with "Abracadabra!"
