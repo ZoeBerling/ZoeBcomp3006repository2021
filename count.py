@@ -7,17 +7,6 @@ Change the file by updating the file variable.
  -l only prints the frequencies of the characters in the argument assigned after -l is called. This is case-sensitive.
  The arguments are additive."""
 
-# Count frequencies of characters in a text file
-# create txt file with "Abracadabra!"
-# read in txt file
-# split text file by letter
-# Count instances of each letter
-# Save to a dictionary: letter: count
-# save dictionary to csv
-
-# -c upper case and lower case
-# -l only prints frequencies of the characters in the argument letters for example l aeiou only counts vowels
-# -z prints a row for each character even when it occurs 0 times
 import string
 import sys
 # sys.path.insert(0, "/home/zoebe/PycharmProjects/DU Assignments")
@@ -75,17 +64,13 @@ def og_function():
                 # letters = sys.argv[index + 1]
                 letters = specify_letters
                 if '-' in letters:  # checks if the next item in the index is a new flag
-                    # print("Characters for the argument -l not found. Letters to count must follow the argument -l.")
-                    # returns empty dictionary since there are no letters to count
-                    d = []
+                    d = []  # returns empty dictionary since there are no letters to count
                 else:
                     if key not in letters: # set count to -1 for letters not in argument
                         d[key] = -1
                         # del d[key]
             except IndexError:
-                # print("Characters for the argument -l not found. Letters to count must follow the argument -l.")
-                # returns empty dictionary since there are no letters to count
-                d = []
+                d = [] # returns empty dictionary since there are no letters to count
                 break
     else:
         print(d)
