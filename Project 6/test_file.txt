@@ -1,0 +1,33 @@
+Summary of Averages:
+
+                                  Mean  Standard Deviation        Median
+Days Wasted                1000.495500          578.745577   1001.000000
+Nitrogen Levels               0.503194            0.289113      0.502267
+Price per Pound               6.519200            3.442676      7.000000
+Unread Emails              4971.611100         2886.569576   4926.500000
+Big Foot Sightings            3.006500            1.413527      3.000000
+Ice Cream Related Deaths    527.880800          272.752883    532.000000
+Years Old                    53.152100           29.885583     54.000000
+Hours Wasted                 94.275800           53.245233     95.000000
+Bad Dates                 50027.305500        28574.067785  49133.500000
+Beard Length in Meters       40.899288           22.927839     40.799332
+
+Mode/s (Only showing 10 rows bc a couple columns are all unique values:
+      Days Wasted  Nitrogen Levels  Price per Pound  Unread Emails  Big Foot Sightings  Ice Cream Related Deaths  Years Old  Hours Wasted  Bad Dates  Beard Length in Meters
+0           734.0         0.000164              4.0         4710.0                 3.0                     629.0       77.0         153.0    15138.0                1.001480
+1           749.0         0.000332              NaN         7321.0                 NaN                     757.0        NaN           NaN    26945.0                1.005758
+2             NaN         0.000431              NaN            NaN                 NaN                       NaN        NaN           NaN    36438.0                1.019359
+3             NaN         0.000560              NaN            NaN                 NaN                       NaN        NaN           NaN    42235.0                1.020582
+4             NaN         0.000651              NaN            NaN                 NaN                       NaN        NaN           NaN    44477.0                1.026823
+...           ...              ...              ...            ...                 ...                       ...        ...           ...        ...                     ...
+9995          NaN         0.999638              NaN            NaN                 NaN                       NaN        NaN           NaN        NaN               80.959240
+9996          NaN         0.999740              NaN            NaN                 NaN                       NaN        NaN           NaN        NaN               80.986873
+9997          NaN         0.999861              NaN            NaN                 NaN                       NaN        NaN           NaN        NaN               80.988645
+9998          NaN         0.999911              NaN            NaN                 NaN                       NaN        NaN           NaN        NaN               80.991932
+9999          NaN         0.999928              NaN            NaN                 NaN                       NaN        NaN           NaN        NaN               80.993753
+
+Sample Data:
+   Days Wasted  Nitrogen Levels  Price per Pound  Unread Emails  Big Foot Sightings  Ice Cream Related Deaths  Years Old  Hours Wasted  Bad Dates  Beard Length in Meters
+0        460.0         0.242327              8.0         2123.0                 4.0                     328.0       39.0         121.0    72495.0               40.364522
+1        545.0         0.472737              8.0         1595.0                 3.0                     332.0       63.0          99.0    80783.0               35.643505
+2       1903.0         0.199984              6.0         9175.0                 4.0                     969.0       71.0         161.0    23497.0               71.575998
